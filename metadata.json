@@ -1,0 +1,6 @@
+{
+  "name": "Escritorio Jurídico e Inmobiliario",
+  "description": "Firma legal especializada en Derecho Legal e Inmobiliario con más de 40 años de trayectoria y efectividad estratégica en Venezuela e internacionalmente.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

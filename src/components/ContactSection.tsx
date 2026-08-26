@@ -136,7 +136,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                 Canales de Atención Directa
               </h3>
               <p className="text-xs text-slate-300 mb-6 leading-relaxed">
-                Atención presencial en nuestra sede corporativa en Caracas y sesiones virtuales para clientes en el interior y exterior del país.
+                Atención personalizada en nuestra sede en Caripe, Monagas, y sesiones virtuales para clientes en todo el territorio nacional y el exterior.
               </p>
 
               {/* Contacts Details */}
@@ -145,7 +145,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                 <div className="flex items-start space-x-3.5 bg-white/5 p-3.5 rounded-xl border border-white/5">
                   <MapPin className="w-5 h-5 text-[#d4af37] shrink-0 mt-0.5" />
                   <div>
-                    <strong className="text-white block font-medium">Sede Principal en Caracas:</strong>
+                    <strong className="text-white block font-medium">Sede Principal:</strong>
                     <p className="text-slate-300 text-xs mt-0.5">{FIRM_INFO.address}</p>
                   </div>
                 </div>
@@ -153,8 +153,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                 <div className="flex items-start space-x-3.5 bg-white/5 p-3.5 rounded-xl border border-white/5">
                   <Phone className="w-5 h-5 text-[#d4af37] shrink-0 mt-0.5" />
                   <div>
-                    <strong className="text-white block font-medium">Central Telefónica:</strong>
-                    <p className="text-slate-300 text-xs mt-0.5">{FIRM_INFO.phoneMain} / {FIRM_INFO.phoneDirect}</p>
+                    <strong className="text-white block font-medium">Línea Telefónica / WhatsApp:</strong>
+                    <p className="text-slate-300 text-xs mt-0.5">{FIRM_INFO.phoneMain}</p>
                   </div>
                 </div>
 
@@ -162,8 +162,15 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                   <MessageCircle className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-white block font-medium">WhatsApp Jurídico Oficial:</strong>
-                    <p className="text-emerald-300 text-xs mt-0.5 font-semibold">{FIRM_INFO.whatsapp}</p>
-                    <span className="text-[11px] text-slate-400">Atención ágil para consultas previas</span>
+                    <a
+                      href={`https://wa.me/${FIRM_INFO.whatsapp.replace(/[^0-9]/g, '')}?text=Hola,%20deseo%20hacer%20una%20consulta%20legal.`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-emerald-300 hover:text-emerald-200 text-xs mt-0.5 font-semibold block"
+                    >
+                      {FIRM_INFO.whatsapp}
+                    </a>
+                    <span className="text-[11px] text-slate-400">Atención directa para consultas y citas</span>
                   </div>
                 </div>
 
@@ -171,7 +178,12 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                   <Mail className="w-5 h-5 text-[#d4af37] shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-white block font-medium">Correo Electrónico:</strong>
-                    <p className="text-slate-300 text-xs mt-0.5">{FIRM_INFO.email}</p>
+                    <a
+                      href={`mailto:${FIRM_INFO.email}`}
+                      className="text-slate-300 hover:text-[#d4af37] text-xs mt-0.5 block transition-colors"
+                    >
+                      {FIRM_INFO.email}
+                    </a>
                   </div>
                 </div>
 

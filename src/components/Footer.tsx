@@ -21,11 +21,11 @@ export const Footer: React.FC = () => {
               </div>
             </div>
             <div>
-              <span className="font-serif-luxury font-bold text-white text-base tracking-wider block">
+              <span className="font-serif-luxury font-bold text-white text-base sm:text-lg tracking-wider block">
                 {FIRM_INFO.name}
               </span>
-              <span className="text-[11px] text-[#c5a059] tracking-wider uppercase">
-                {FIRM_INFO.yearsOfExperience} Años de Tradición Jurídica & Rigor Notarial • Desde 1984
+              <span className="text-[11px] text-[#d4af37] font-bold tracking-widest uppercase block">
+                {FIRM_INFO.subtitle} • {FIRM_INFO.yearsOfExperience} Años
               </span>
             </div>
           </div>
@@ -151,12 +151,12 @@ export const Footer: React.FC = () => {
 
           <div className="mt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
             <p>
-              © 1984 - 2026 {FIRM_INFO.name}. Todos los derechos reservados.
+              © 1984 - 2026 ESCRITORIO JURÍDICO E INMOBILIARIO. SISETGOLD/METODO 3P Todos los derechos reservados.
             </p>
             <div className="flex items-center space-x-4">
-              <span>Caracas • Venezuela</span>
+              <span>Caripe, Monagas • Venezuela</span>
               <span>•</span>
-              <span>Atención Global</span>
+              <span>Atención Nacional e Internacional</span>
             </div>
           </div>
         </div>

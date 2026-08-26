@@ -49,7 +49,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSchedule }) => {
             </span>
             <span className="text-slate-400 hidden lg:inline">|</span>
             <span className="text-slate-400 hidden lg:inline">
-              Caracas • Asesoría Nacional & Transfronteriza
+              Caripe, Monagas • Asesoría Nacional & Transfronteriza
             </span>
           </div>
 
@@ -100,12 +100,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSchedule }) => {
                 <Scale className="w-5 h-5 text-[#f4d799]" />
               </div>
             </div>
-            <div className="flex flex-col">
-              <span className="font-serif-luxury tracking-widest text-sm sm:text-base font-bold text-white uppercase group-hover:text-[#e8d08d] transition-colors leading-tight">
-                ESCRITORIO JURÍDICO
+            <div className="flex flex-col text-left">
+              <span className="font-serif-luxury tracking-wider text-sm sm:text-base font-bold text-white uppercase group-hover:text-[#e8d08d] transition-colors leading-tight">
+                {FIRM_INFO.name}
               </span>
-              <span className="text-[10px] sm:text-xs font-semibold tracking-wider text-[#c5a059] uppercase">
-                E INMOBILIARIO • 1984
+              <span className="text-[10px] sm:text-xs font-bold tracking-widest text-[#d4af37] uppercase">
+                {FIRM_INFO.subtitle}
               </span>
             </div>
           </a>

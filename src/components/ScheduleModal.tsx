@@ -30,7 +30,7 @@ export const ScheduleModal: React.FC<ScheduleModalProps> = ({ isOpen, onClose })
   };
 
   const handleWhatsAppConfirmation = () => {
-    const text = `*SOLICITUD DE CITA LEGAL*%0A%0A*Cliente:* ${encodeURIComponent(scheduleData.fullName)}%0A*Modalidad:* ${encodeURIComponent(scheduleData.mode === 'virtual' ? 'Videollamada Zoom/Meet' : 'Presencial en Caracas')}%0A*Fecha Deseada:* ${encodeURIComponent(scheduleData.date || 'A coordinar')}%0A*Horario:* ${encodeURIComponent(scheduleData.timeSlot)}%0A*Materia:* ${encodeURIComponent(scheduleData.topic)}%0A*Tel:* ${encodeURIComponent(scheduleData.phone)}`;
+    const text = `*SOLICITUD DE CITA LEGAL*%0A%0A*Cliente:* ${encodeURIComponent(scheduleData.fullName)}%0A*Modalidad:* ${encodeURIComponent(scheduleData.mode === 'virtual' ? 'Videollamada Zoom/Meet' : 'Presencial en Sede (Caripe, Monagas)')}%0A*Fecha Deseada:* ${encodeURIComponent(scheduleData.date || 'A coordinar')}%0A*Horario:* ${encodeURIComponent(scheduleData.timeSlot)}%0A*Materia:* ${encodeURIComponent(scheduleData.topic)}%0A*Tel:* ${encodeURIComponent(scheduleData.phone)}`;
     window.open(`https://wa.me/${FIRM_INFO.whatsapp.replace(/[^0-9]/g, '')}?text=${text}`, '_blank');
   };
 
@@ -68,10 +68,10 @@ export const ScheduleModal: React.FC<ScheduleModalProps> = ({ isOpen, onClose })
                 ¡Pre-Reserva Registrada!
               </h3>
               <p className="text-sm text-slate-300 max-w-md mx-auto leading-relaxed">
-                Hemos recibido su preferencia para la sesión con nuestros abogados. Nuestro asistente de despacho le confirmará el enlace seguro o la confirmación de sala en nuestra sede en El Rosal, Caracas.
+                Hemos recibido su preferencia para la sesión con nuestros abogados. Nuestro asistente de despacho le confirmará el enlace seguro o la confirmación de sala en nuestra sede en {FIRM_INFO.address}.
               </p>
               <div className="bg-white/5 p-4 rounded-xl max-w-sm mx-auto text-xs text-slate-300 text-left border border-white/5 space-y-1">
-                <p><strong>Modalidad:</strong> {scheduleData.mode === 'virtual' ? 'Virtual (Zoom / Meet)' : 'Presencial (Caracas)'}</p>
+                <p><strong>Modalidad:</strong> {scheduleData.mode === 'virtual' ? 'Virtual (Zoom / Meet)' : 'Presencial en Sede'}</p>
                 <p><strong>Horario preferido:</strong> {scheduleData.timeSlot}</p>
                 <p><strong>Asunto:</strong> {scheduleData.topic}</p>
               </div>
@@ -126,7 +126,7 @@ export const ScheduleModal: React.FC<ScheduleModalProps> = ({ isOpen, onClose })
                     }`}
                   >
                     <Building className="w-4 h-4 text-[#d4af37]" />
-                    <span>Presencial (Caracas)</span>
+                    <span>Presencial (Sede)</span>
                   </button>
                 </div>
               </div>

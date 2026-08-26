@@ -1,24 +1,25 @@
 import { ServiceCategory, StrategyStep, SuccessCase, FAQItem } from '../types';
 
 export const FIRM_INFO = {
-  name: 'ESCRITORIO JURÍDICO E INMOBILIARIO',
-  shortName: 'EJI Abogados & Consultores',
+  name: 'ASOJURIDICO.DT',
+  subtitle: 'LEGAL E INMOBILIARIO',
+  shortName: 'ASOJURIDICO.DT Abogados & Consultores',
   tagline: 'Más de 40 años de efectividad estratégica en materia Legal e Inmobiliaria',
   foundedYear: 1984,
   yearsOfExperience: '40+',
   resolvedCases: '+3,850',
   clientCountries: '18+',
   effectivenessRate: '99.4%',
-  phoneMain: '+58 212 953 4810',
-  phoneDirect: '+58 212 953 4811',
-  whatsapp: '+58 414 235 8890',
-  whatsappInternational: '+1 786 405 9210',
-  email: 'contacto@escritoriojuridico.com.ve',
-  emailPrivate: 'consultas@escritoriojuridico.com.ve',
-  address: 'Av. Francisco de Miranda, Centro Financiero Latino / Torre Europa, Piso 14, Ofic. 14-C. El Rosal / Chacao, Caracas 1060, Venezuela.',
-  scheduleHours: 'Lunes a Viernes: 8:30 AM - 5:30 PM (Hora Caracas VET / GMT-4)',
-  scheduleInternational: 'Atención internacional remota disponible previa cita vía Zoom, Google Meet o Teams.',
-  barRegistration: 'Inpreabogado N° 34.821 / Colegio de Abogados del Distrito Capital',
+  phoneMain: '+58 414 846 9825',
+  phoneDirect: '+58 414 846 9825',
+  whatsapp: '+58 414 846 9825',
+  whatsappInternational: '+58 414 846 9825',
+  email: 'asojuridico.dt@gmail.com',
+  emailPrivate: 'asojuridico.dt@gmail.com',
+  address: 'Caripe, Monagas, Venezuela',
+  scheduleHours: 'Lunes a Viernes: 8:30 AM - 5:30 PM (Hora Venezuela VET / GMT-4)',
+  scheduleInternational: 'Atención nacional e internacional remota disponible previa cita vía Zoom, Google Meet o Teams.',
+  barRegistration: 'Inpreabogado N° 34.821 / Colegio de Abogados',
 };
 
 export const SERVICES_DATA: ServiceCategory[] = [
